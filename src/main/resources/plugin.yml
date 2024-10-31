@@ -1,0 +1,20 @@
+name: Autorun
+main: com.pilzbros.Autorun.Autorun
+version: 1.4
+description: Autorun commands!
+author: Austin Pilz
+website: http://dev.bukkit.org/bukkit-plugins/autorun
+commands:
+    autorun:
+        description: Autorun commands
+    ar:
+        description: Autorun alias
+permissions:
+    autorun.*:
+        description: Gives access to all Autorun commands
+        children:
+            autorun.admin: true
+        default: op
+    autorun.admin:
+        description: Gives admin access to Autorun admin commands
+        default: op
